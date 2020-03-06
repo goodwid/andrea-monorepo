@@ -1,0 +1,16 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src",
+    "pretest": "yarn run lint",
+    "build": "cd ../.. && yarn build:admin",
+    "build:cordova": "cd ../.. && yarn run build:admin:cordova",
+    "start": "cd ../.. && yarn start:admin",
+    "test": "yarn run jest  --passWithNoTests",
+    "jest": "jest",
+    "test:watch": "yarn run test --watch"
+  }
+}

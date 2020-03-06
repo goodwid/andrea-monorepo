@@ -1,0 +1,15 @@
+{
+  "name": "gen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src",
+    "pretest": "yarn run lint",
+    "build": "cd ../.. && yarn build:gen",
+    "start": "cd ../.. && yarn start:gen",
+    "test": "yarn run jest",
+    "jest": "jest",
+    "test:watch": "yarn run test --watch"
+  }
+}

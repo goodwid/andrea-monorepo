@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+read -p "Did you update the version in config.xml? " -n 1 -r 
+if [[ $REPLY =~ ^[Nn]$ ]]; then
+  exit 1
+fi
+

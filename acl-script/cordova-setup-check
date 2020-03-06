@@ -1,0 +1,87 @@
+#!/usr/bin/env bash
+#
+#  This file will confirm that all the necessary build tools are in place for 
+#  building Cordova apps
+#
+#  
+
+function usage() {
+  echo -e "Usage: $0 -a or -i, to check for Android or iOS requirements.\n\n"
+}
+ERRORS=''
+function checkCommon() {
+  if ! hash cordova 2>/dev/null; then
+    echo -e "[1;31mYou're missing cordova.[0m  To install, type: npm i cordova -g"
+    ERRORS="$ERRORS no_cordova"
+  fi
+    if ! hash cordova-icon 2>/dev/null; then
+    echo -e "[1;31mYou're missing cordova-icon.[0m  To install, type: npm i cordova-icon -g"
+    ERRORS="$ERRORS no_cordova"
+  fi
+  if ! hash cordova-splash 2>/dev/null; then
+    echo -e "[1;31mYou're missing cordova-splash.[0m  To install, type: npm i cordova-splash -g"
+    ERRORS="$ERRORS no_cordova"
+  fi
+  if ! hash convert 2>/dev/null; then
+    echo -e "[1;31mYou're missing Image Magick.[0m  To install:\n\tLinux\tsudo apt-get install imagemagick\n\tMacOS\tbrew install imagemagick\n\tWindows\thttp://www.imagemagick.org/script/binary-releases.php#windows"
+    ERRORS="$ERRORS no_image_magick"
+  fi
+  if [ -z "$ERRORS" ]; then
+    echo -e "[1;32mEverything is installed as required![0m"
+    exit 0;
+  else
+    echo "$ERRORS"
+    echo -e "[1;31mCorrect the above errors and check again.[0m"
+    exit 1
+  fi
+}
+
+function checkAndroidFiles() {
+  if [ ! -f ./google-services.json ]; then
+    echo -e "[1;31mYou're missing google-services.json.[0m  You can get that from the firebase console."
+    ERRORS="$ERRORS no_services"
+  fi
+  if [ -z $ANDROID_HOME ]; then
+    echo -e "[1;31mYou're missing the Android SDK.[0m  visit https://developer.android.com/studio/ to get the package."
+    ERRORS="$ERRORS no_android_sdk"
+  fi
+  if [ -z $JAVA_HOME ]; then
+    echo -e "[1;31mYou're missing the Java JDK.[0m  visit https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html to get the package."
+    ERRORS="$ERRORS no_java"
+  fi
+  if ! hash gradle 2>/dev/null; then
+    echo -e "[1;31mYou're missing Gradle.[0m  Visit https://gradle.org/install/ to install."
+    ERRORS="$ERRORS no_gradle"
+  fi
+  checkCommon
+}
+
+function checkiOSFiles() {
+  if [ ! -f ./GoogleService-Info.plist ]; then
+    echo -e "[1;31mYou're missing GoogleService-info.plist.[0m  You can get that from the firebase console."
+    ERRORS="$ERRORS no_plist"
+  fi
+  checkCommon
+}
+
+if [ $# -eq 0 ]; then
+  usage
+  exit 1
+fi
+
+while getopts "ai" optname 
+  do
+    case "$optname" in
+      "a")
+        echo -e "Checking for Android build requirements...\n"
+        checkAndroidFiles
+        ;;
+      "i")
+        echo -e "Checking for iOS build requirements...\n"
+        checkiOSFiles
+        ;;
+      ":")
+        echo "No argument specified "
+        ;;
+    esac
+  done

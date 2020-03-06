@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header page matches the snapshot 1`] = `
+<header
+  className="Header"
+>
+  <FaBars
+    className="header-icon-left"
+  />
+  <h1>
+    $PROJECT
+  </h1>
+  <FaBell
+    className="header-icon-right"
+  />
+</header>
+`;

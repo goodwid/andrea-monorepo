@@ -1,0 +1,13 @@
+{
+  "name": "caregiver-shared",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src",
+    "pretest": "yarn run lint",
+    "test": "yarn run jest",
+    "jest": "jest",
+    "test:watch": "yarn run test --watch"
+  }
+}

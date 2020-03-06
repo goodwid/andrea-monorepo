@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# runs cordova-icon 
+
+ASSETS='../src/assets/img/'
+ICON='icon.png'
+if [ ! -f $ICON ]; then
+  echo -e "[1;31m$ICON is missing.[0m\n\n Copying from $ASSETS..."
+  cp $ASSETS/$ICON .
+fi
+
+cordova-icon --icon=$ICON
