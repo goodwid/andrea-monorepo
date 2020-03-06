@@ -9,7 +9,7 @@ module.exports = (env, argv) => {
   const { app, cordova } = env;
   let prod = argv.mode === 'production';
 
-  const buildPath =`${__dirname}/packages/${app}/build`;
+  const buildPath = `${__dirname}/packages/${app}/build`;
 
   const config = {
     entry: `./packages/${app}/src/index.js`,
@@ -137,6 +137,6 @@ module.exports = (env, argv) => {
       },
     },
   };
-  
+
   return config;
 };

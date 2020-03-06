@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Header.scss';
 import Menu from './Menu';
+import { app } from 'root/app.config.js';
 
 // 3RD PARTY LIBRARY
 import { FaBars as MenuIcon, FaBell as Notification } from 'react-icons/fa';
@@ -32,7 +33,7 @@ class Header extends PureComponent {
     return (
       <header className={styles.Header}>
         <MenuIcon className="header-icon-left" onClick={isMobile ? null : () => this.handleMenu(true)} />
-        <h1>Comment Generator</h1>
+        <h1>{app.title}</h1>
         <Notification className="header-icon-right" />
         { showMenu &&
           <Menu handleNav={this.handleNav} menuItems={menuItems} auth={true}/>

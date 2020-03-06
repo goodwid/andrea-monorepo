@@ -4,7 +4,7 @@ module.exports = {
   verbose: true,
   clearMocks: true,
   projects: [
-    '<rootDir>/packages/app/jest.config.js',
+    '<rootDir>/jest.config.js',
   ],
   transform: {
     '^.+\\.(js|jsx)$': path.resolve(__dirname, './jest-transformer'),

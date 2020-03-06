@@ -3,7 +3,7 @@ import 'firebase/firestore';
 import 'firebase/auth';
 import 'firebase/storage';
 import 'firebase/database';
-import config from 'root/firebase.config';
+import { firebase as config } from 'root/app.config';
 
 
 
