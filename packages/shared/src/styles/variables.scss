@@ -24,10 +24,10 @@ $cyan: rgb(100, 171, 192);
 $light-sky-blue: rgba(59, 153, 252, 0.3);
 $sky-blue: rgb(59, 153, 252);
 
-$main-header-color: lightsalmon;
+$main-header-color: $light-blue;
 $sub-header-color: rgb(37, 37, 37);
 $card-background-blue: #1976d2;
-$primary-text: #212121;
+$primary-text: $alchemy-black;
 $card-border-color: #bbdefb;
 $card-underline-color: #ff9800;
 $card-underline-color-opacity: rgba(255, 155, 0, 0.5);
@@ -47,8 +47,7 @@ $default-caption-size: 1rem;
 
 // Sizing
 $header-size: 9vh;
-$footer-size: 12vh;
-$content-size: (100vh - ($header-size + $footer-size));
+$content-size: (100vh - $header-size);
 
 // Confirmation modal yes/no buttons
 @mixin selection-btn-color($to-fill) {

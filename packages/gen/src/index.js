@@ -4,15 +4,7 @@ import 'shared/styles/_reset.scss';
 import 'shared/styles/main.scss';
 import App from './components/app/App';
 
-const startApp = () => {
-  ReactDOM.render(
-    <App />,
-    document.getElementById('root'),
-  );
-};
-
-if (window.cordova) {
-  document.addEventListener('deviceready', startApp.bind(window));
-} else {
-  startApp();
-}
+ReactDOM.render(
+  <App />,
+  document.getElementById('root'),
+);

@@ -7,12 +7,43 @@
   height: $content-size;
 
   font-family: $default-font;
-  overflow: scroll;
+  overflow: hidden;
   z-index: -1;
+  background-color: $red;
 
-  p {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    color: $red;
+  display: flex;
+  flex-direction: row;
+
+  $selector-width: 12vw;
+  $picker-width: 48vw;
+  $aside-width: (100vw - ($selector-width + $picker-width));
+
+  div {
+    border: 1px solid black;
+    background-color: white;
+  }
+
+  .selector {
+    width: $selector-width;
+    height: 100%;
+  }
+
+  .picker {
+    width: $picker-width;
+    height: 100%;
+  }
+
+  .search {
+    height: 30%;
+  }
+
+  .display {
+    height: 70%;
+  }
+
+  aside {
+    width: $aside-width;
+    height: 100%;
+    background-color: green;
   }
 }

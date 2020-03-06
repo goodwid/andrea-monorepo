@@ -1,14 +1,25 @@
 import React from 'react';
 import styles from './Home.scss';
 
-
 const Home = () => {
+  
   return (
-    <article className={styles.Home}>
-      <p>
-         This is a project file.
-      </p>
-    </article>
+    <section className={styles.Home}>
+      <div className="selector">
+
+      </div>
+      <div className="picker">
+
+      </div>
+      <aside>
+        <div className="search">
+
+        </div>
+        <div className="display">
+
+        </div>
+      </aside>
+    </section>
   );
 };
 
