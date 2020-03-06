@@ -1,0 +1,10 @@
+@import 'shared/styles/variables.scss';
+
+:local(.Display) {
+
+  textarea {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+  }
+}

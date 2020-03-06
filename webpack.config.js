@@ -39,6 +39,7 @@ module.exports = (env, argv) => {
         services: path.resolve(__dirname, `packages/${app}/src/services`),
         styles: path.resolve(__dirname, `packages/${app}/src/styles`),
         routes: path.resolve(__dirname, `packages/${app}/src/routes`),
+        hooks: path.resolve(__dirname, `packages/${app}/src/hooks`),
         assets: path.resolve(__dirname, 'packages/shared/assets'),
         shared: path.resolve(__dirname, 'packages/shared/src'),
         root: __dirname,
