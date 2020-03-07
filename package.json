@@ -24,6 +24,7 @@
     "build:all": "yarn run build:admin && yarn run build:gen && yarn run build:app2",
     "test": "yarn workspaces run test -i",
     "test:watch": "yarn run test --watch",
+    "deploy": "yarn run build:gen && firebase deploy",
     "deploy:database": "firebase-bolt rtdb.rules.bolt && firebase deploy --only database"
   },
   "devDependencies": {

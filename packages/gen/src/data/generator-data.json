@@ -5,14 +5,6 @@
     "choices": []
   },
   {
-    "title": "FITB1",
-    "choices": []
-  },
-  {
-    "title": "FITB2",
-    "choices": []
-  },
-  {
     "title": "CREATIVE_PROCESS",
     "choices": [
       "curious exploration of materials and tools",
@@ -127,6 +119,10 @@
     ]
   },
   {
+    "title": "FITB1_INSPIRATION",
+    "choices": []
+  },
+  {
     "title": "RESPONSIBILITY",
     "choices": [
       "helping to maintain a clean and organized classroom",
@@ -167,5 +163,9 @@
       "a positive",
       "an enjoyable"
     ]
+  },
+  {
+    "title": "FITB2",
+    "choices": []
   }
 ]

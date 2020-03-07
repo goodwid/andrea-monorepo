@@ -15,8 +15,6 @@ const Display = ({ content }) => {
 
   const [
     NAME,
-    FITB_1,
-    FITB_2,
     CREATIVE_PROCESS,
     FLOW,
     PROJECT,
@@ -26,9 +24,11 @@ const Display = ({ content }) => {
     PROCESS_AND_SKILLS,
     ART_HISTORICAL_PRINCIPLES,
     CREATIVE_VOICE,
+    FITB_1,
     RESPONSIBILITY,
     RESPECT,
-    EVAL
+    EVAL,
+    FITB_2,
   ] = content;
 
 
