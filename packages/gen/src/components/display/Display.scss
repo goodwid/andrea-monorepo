@@ -5,6 +5,9 @@
   padding: 1rem;
 
   .highlight {
-    background-color: yellow;
+    background-color: $light-blue;
+  }
+  button {
+    margin: 1rem 3rem;
   }
 }

@@ -2,6 +2,12 @@
 
 :local(.Picker) {
 
+  h2 {
+    margin: 1rem 4rem;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
   input {
     margin: .5rem;
   }

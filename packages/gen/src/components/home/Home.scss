@@ -9,7 +9,6 @@
   font-family: $default-font;
   overflow: hidden;
   z-index: -1;
-  background-color: $red;
 
   display: flex;
   flex-direction: row;
@@ -19,7 +18,7 @@
 
   div {
     border: 1px solid black;
-    background-color: white;
+    background-color: $transparent-orange;
   }
 
   .selector {
@@ -39,6 +38,5 @@
   aside {
     width: $aside-width;
     height: 100%;
-    background-color: green;
   }
 }
