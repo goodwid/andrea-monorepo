@@ -1,11 +1,11 @@
 
 [
   {
-    "title": "NAME",
+    "title": "Name",
     "choices": []
   },
   {
-    "title": "CREATIVE_PROCESS",
+    "title": "Creative Process",
     "choices": [
       "curious exploration of materials and tools",
       "thoughtful engagement of historical concepts and skills",
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "title": "FLOW",
+    "title": "Flow",
     "choices": [
       "shows the capability to dive deeply into the process of creating",
       "shows great focus and attention. They show intentionality in their work",
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "title": "PROJECT",
+    "title": "Project",
     "choices": [
       "ancient cave painting inspired pastel drawing of an animal",
       "hieroglyphic inspired narrative and character infused comic strip",
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "title": "ELEMENTS_OF_ART",
+    "title": "Elements of Art",
     "choices": [
       "line drawing",
       "color hue",
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "title": "PRINCIPLES_OF_ART",
+    "title": "Principles of Art",
     "choices": [
       "visual movement",
       "facial proportion",
@@ -61,7 +61,7 @@
     ]
   },
   {
-    "title": "COMPOSITION",
+    "title": "Composition",
     "choices": [
       "a strong sense of overall visual harmony",
       "good use of a harmonious color scheme",
@@ -76,7 +76,7 @@
     ]
   },
   {
-    "title": "PROCESS_AND_SKILLS",
+    "title": "Process and Skills",
     "choices": [
       "source inspiration for character and narrative ideas",
       "the artistic skills and materials taught in the lessons",
@@ -89,7 +89,7 @@
     ]
   },
   {
-    "title": "ART_HISTORICAL_PRINCIPLES",
+    "title": "Art Historical Principles",
     "choices": [
       "visual movement through the figurative form",
       "tonal value through neutral color hues",
@@ -102,7 +102,7 @@
     ]
   },
   {
-    "title": "CREATIVE_VOICE",
+    "title": "Creative Voice",
     "choices": [
       "inclusion of personal narrative in their work",
       "unique drawing qualities that show their own artistic style",
@@ -119,11 +119,11 @@
     ]
   },
   {
-    "title": "FITB1_INSPIRATION",
+    "title": "Inspiration",
     "choices": []
   },
   {
-    "title": "RESPONSIBILITY",
+    "title": "Responsibiliy",
     "choices": [
       "helping to maintain a clean and organized classroom",
       "treating tools and supplies with care",
@@ -137,7 +137,7 @@
     ]
   },
   {
-    "title": "RESPECT",
+    "title": "Respect",
     "choices": [
       "treating other’s art with kindness",
       "treating other people with kindness",
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "title": "EVAL",
+    "title": "Evaluation",
     "choices": [
       "an awesome",
       "a wonderful",
@@ -165,7 +165,7 @@
     ]
   },
   {
-    "title": "FITB2",
+    "title": "Addendum",
     "choices": []
   }
 ]

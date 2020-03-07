@@ -24,11 +24,11 @@ const Display = ({ content }) => {
     PROCESS_AND_SKILLS,
     ART_HISTORICAL_PRINCIPLES,
     CREATIVE_VOICE,
-    FITB_1,
+    INSPIRATION,
     RESPONSIBILITY,
     RESPECT,
     EVAL,
-    FITB_2,
+    ADDENDUM,
   ] = content;
 
 
@@ -39,7 +39,7 @@ const Display = ({ content }) => {
   return (
     <section className={styles.Display}>
       <p ref={textRef} onClick={handleCopy}>
-          As a student, <Datum text={NAME} /> engages in the creative process through <Datum text={CREATIVE_PROCESS} />.  Their ability to engage in the flow of their work <Datum text={FLOW} />. This semester, <Datum text={NAME} /> has shown growth in their <Datum text={PROJECT} />. Their work shows good use of <Datum text={ELEMENTS_OF_ART} /> and <Datum text={PRINCIPLES_OF_ART} />. Compositionally, their work has shown <Datum text={COMPOSITION} />.  <Datum text={NAME} /> has also shown progress in their utilization of <Datum text={PROCESS_AND_SKILLS} />. Conceptually, their work shows the incorporation of <Datum text={ART_HISTORICAL_PRINCIPLES} />, and the development of their creative voice through <Datum text={CREATIVE_VOICE} />. Personally, <Datum text={NAME} /> shows their inspiration through <Datum text={FITB_1} />.  In class, <Datum text={NAME} /> shows responsibility for their actions through <Datum text={RESPONSIBILITY} />, and respect through <Datum text={RESPECT} />. Overall, <Datum text={NAME} /> has had <Datum text={EVAL} /> semester in art<Datum text={' ' + FITB_2} />.
+          As a student, <Datum text={NAME} /> engages in the creative process through <Datum text={CREATIVE_PROCESS} />.  Their ability to engage in the flow of their work <Datum text={FLOW} />. This semester, <Datum text={NAME} /> has shown growth in their <Datum text={PROJECT} />. Their work shows good use of <Datum text={ELEMENTS_OF_ART} /> and <Datum text={PRINCIPLES_OF_ART} />. Compositionally, their work has shown <Datum text={COMPOSITION} />.  <Datum text={NAME} /> has also shown progress in their utilization of <Datum text={PROCESS_AND_SKILLS} />. Conceptually, their work shows the incorporation of <Datum text={ART_HISTORICAL_PRINCIPLES} />, and the development of their creative voice through <Datum text={CREATIVE_VOICE} />. Personally, <Datum text={NAME} /> shows their inspiration through <Datum text={INSPIRATION} />.  In class, <Datum text={NAME} /> shows responsibility for their actions through <Datum text={RESPONSIBILITY} />, and respect through <Datum text={RESPECT} />. Overall, <Datum text={NAME} /> has had <Datum text={EVAL} /> semester in art<Datum text={ADDENDUM} />.
       </p>
       <Clipboard data-clipboard-text={text}>
         Copy to Clipboard!

@@ -20,7 +20,12 @@ const Picker = ({ category, handler }) => {
       <h2>{title}</h2>
       { choices.length === 0
         ?
-        <input className="fitb" type="text" onChange={({ target }) => setChoice(target.value)} />
+        <>
+          <input className="fitb" type="text" onChange={({ target }) => setChoice(target.value)} />
+          <p>
+            Be mindful of spacing in the final text, especially with Addendum.
+          </p>
+        </>
         :
         choices.map((c, i) => {
           return (
