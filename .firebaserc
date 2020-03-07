@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "rosselle-commenter"
+  },
+  "targets": {
+    "rosselle-commenter": {
+      "hosting": {
+        "gen": [
+          "rosselle-commenter"
+        ]
+      }
+    }
   }
 }

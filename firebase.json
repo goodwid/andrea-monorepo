@@ -4,8 +4,8 @@
   },
 
   "hosting": {
-    "target": "app",
-    "public": "packages/app/build",
+    "target": "gen",
+    "public": "packages/gen/build",
     "ignore": [ "firebase.json", "**/.*", "**/node_modules/**" ],
     "rewrites": [
       {
