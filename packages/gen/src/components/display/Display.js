@@ -4,7 +4,7 @@ import styles from './Display.scss';
 import Clipboard from 'react-clipboard.js';
 
 
-const Display = ({ content }) => {
+const Display = ({ content, reset }) => {
 
   const [text, setText] = useState('');
   const textRef = useRef();
@@ -44,6 +44,7 @@ const Display = ({ content }) => {
       <Clipboard data-clipboard-text={text}>
         Copy to Clipboard!
       </Clipboard>
+      <button onClick={reset} >Reset</button>
     </section>
   );
 };

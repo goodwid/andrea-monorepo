@@ -29,6 +29,8 @@ const Home = () => {
     });
   };
 
+  const resetHandler = () => setContent(categories);
+
   return (
     <section className={styles.Home}>
       <div className="selector">
@@ -40,7 +42,7 @@ const Home = () => {
           <Picker category={data[selectedCategory]} handler={choicePickHandler} />
         </div>
         <div className="display">
-          <Display content={content} category={selectedCategory}/>
+          <Display content={content} reset={resetHandler}/>
         </div>
       </aside>
     </section>
