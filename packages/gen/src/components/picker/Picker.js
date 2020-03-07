@@ -1,24 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import propTypes from 'prop-types';
+
 import styles from './Picker.scss';
-import { useCategory } from 'hooks/comment';
-let i = 0;
 
-const Picker = () => {
+const Picker = ({ category, handler }) => {
 
-  const  [choice, addChoice, allChoices, choose, title] = useCategory({ title: 'test', choices: ['foo', 'bar'] });
+  if (!category) return (<h3>Nothing loaded.</h3>);
 
-  const handleButton = () => {
-    addChoice('Testing, ' + i++);
-    choose(i);
-    console.log('click');
-  };
+  const [choice, setChoice] = useState('');
+
+  useEffect(() => {
+    handler(choice);
+  }, [choice]);
+
+  const { title, choices } = category;
+
   return (
     <section className={styles.Picker}>
-      <button onClick={handleButton}>choose</button>
-      title: {title}<br />
-      choise: {allChoices.join('\n')}
+      <h2>{title}</h2>
+      { choices.length === 0
+        ?
+        <input type="text" onChange={({ target }) => setChoice(target.value)} />
+        :
+        choices.map((c, i) => {
+          return (
+            <section className="choice" key={i}>
+              <input name="choice" onClick={({ target }) => setChoice(choices[target.value])} type="radio" id={`input${i}`} value={i}></input>
+              <label htmlFor={`input${i}`}>{c}</label>
+            </section>
+          );
+        })
+      }
     </section>
   );
+};
+
+Picker.propTypes = {
+  category: propTypes.object,
+  handler: propTypes.func,
 };
 
 export default Picker;

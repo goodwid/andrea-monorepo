@@ -1,10 +1,10 @@
 @import 'shared/styles/variables.scss';
 
 :local(.Display) {
+  line-height: 1.4rem;
+  padding: 1rem;
 
-  textarea {
-    height: 80%;
-    width: 80%;
-    margin: auto;
+  .highlight {
+    background-color: yellow;
   }
 }

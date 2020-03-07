@@ -71,6 +71,7 @@
     "firebase": "^7.10.0",
     "normalize.css": "^8.0.0",
     "react": "^16.13.0",
+    "react-clipboard.js": "^2.0.16",
     "react-dom": "^16.13.0",
     "react-firebase-hooks": "^2.1.1",
     "react-firebaseui": "^4.1.0",

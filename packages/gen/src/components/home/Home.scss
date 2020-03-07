@@ -14,9 +14,8 @@
   display: flex;
   flex-direction: row;
 
-  $selector-width: 12vw;
-  $picker-width: 48vw;
-  $aside-width: (100vw - ($selector-width + $picker-width));
+  $selector-width: 20vw;
+  $aside-width: (100vw - $selector-width);
 
   div {
     border: 1px solid black;
@@ -29,16 +28,12 @@
   }
 
   .picker {
-    width: $picker-width;
-    height: 100%;
-  }
-
-  .search {
-    height: 30%;
+    width: 100%;
+    height: 70%;
   }
 
   .display {
-    height: 70%;
+    height: 30%;
   }
 
   aside {

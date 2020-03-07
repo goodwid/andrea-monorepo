@@ -2,5 +2,9 @@
 
 :local(.Selector) {
 
-  color: green;
+  text-transform: lowercase;
+
+  input {
+    margin: .5rem;
+  }
 }
