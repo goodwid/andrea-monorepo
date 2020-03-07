@@ -21,20 +21,29 @@ const Picker = ({ category, handler }) => {
       { choices.length === 0
         ?
         <>
-          <input className="fitb" type="text" onChange={({ target }) => setChoice(target.value)} />
+          <input className="fitb" type="text" value={choice} onChange={({ target }) => setChoice(target.value)} />
           <p>
             Be mindful of spacing in the final text, especially with Addendum.
           </p>
+          <button onClick={() => setChoice('')}>Reset</button>
         </>
         :
-        choices.map((c, i) => {
-          return (
-            <section className="choice" key={i}>
-              <input name="choice" onClick={({ target }) => setChoice(choices[target.value])} type="radio" id={`input${i}`} value={i}></input>
-              <label htmlFor={`input${i}`}>{c}</label>
-            </section>
-          );
-        })
+        <>
+          {choices.map((c, i) => {
+            return (
+              <section className="choice" key={i}>
+                <input name="choice" onClick={({ target }) => setChoice(choices[target.value])} type="radio" id={`input${i}`} value={i}></input>
+                <label htmlFor={`input${i}`}>{c}</label>
+              </section>
+            );
+          })}
+          <section className="choice">
+            <p>
+              ... or type in your own:
+            </p>
+            <input className="fitb" type="text" value={choice} onChange={({ target }) => setChoice(target.value)} />
+          </section>
+        </>
       }
     </section>
   );

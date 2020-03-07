@@ -21,6 +21,12 @@
     background-color: $transparent-orange;
   }
 
+  label, input {
+    border: 1px solid black;
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: white;
+  }
   .selector {
     width: $selector-width;
     height: 100%;

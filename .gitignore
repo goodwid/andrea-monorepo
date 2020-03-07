@@ -16,3 +16,5 @@ Untitled.code-workspace
 
 .vscode/
 packages/app/coverage/
+
+.firebase
