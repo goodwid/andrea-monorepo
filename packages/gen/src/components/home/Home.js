@@ -9,7 +9,7 @@ import data from '../../data/generator-data.json';
 const Home = () => {
   const [content, setContent] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(3);
+  const [selectedCategory, setSelectedCategory] = useState(0);
 
   useEffect(() => {
     const categoryTitles = data.map(({ title }) => title);

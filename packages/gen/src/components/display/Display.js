@@ -6,6 +6,7 @@ import Clipboard from 'react-clipboard.js';
 
 const Display = ({ content, reset }) => {
 
+  if (content.length === 0) return null;
   const [text, setText] = useState('');
   const textRef = useRef();
 
@@ -51,9 +52,23 @@ const Display = ({ content, reset }) => {
 
 Display.propTypes = {
   content: propTypes.array,
+  reset: propTypes.func,
 };
 
-const Datum = ({ text }) => (<span className="highlight">{text}</span>);
+const Datum = ({ text }) => {
+  const [originalText, setOriginalText] = useState('');
+  const [highlight, setHighlight] = useState(true);
+
+  useEffect(() => {
+    if (text && originalText === '') return setOriginalText(text);
+    if (originalText !== text) setHighlight(false);
+  });
+
+
+  return (
+    <span className={highlight ? 'highlight' : ''}>{text}</span>
+  );
+};
 Datum.propTypes = { text: propTypes.string };
 
 export default Display;
