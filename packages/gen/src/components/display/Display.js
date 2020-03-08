@@ -51,6 +51,7 @@ const Display = ({ content, reset }) => {
 
 Display.propTypes = {
   content: propTypes.array,
+  reset: propTypes.func,
 };
 
 const Datum = ({ text }) => (<span className="highlight">{text}</span>);

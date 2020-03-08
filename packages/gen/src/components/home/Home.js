@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useCollectionDataOnce } from 'react-firebase-hooks/firestore';
+import { categoriesRef } from 'shared/services/firebase/firebaseRefs';
 import styles from './Home.scss';
 import Selector from 'components/selector/Selector';
 import Picker from 'components/picker/Picker';
@@ -9,13 +11,19 @@ import data from '../../data/generator-data.json';
 const Home = () => {
   const [content, setContent] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(3);
+  const [selectedCategory, setSelectedCategory] = useState(0);
+  const [data, loading, error] = useCollectionDataOnce(categoriesRef);
+
+  console.log('data ', data);
 
   useEffect(() => {
+    if (loading) return;
     const categoryTitles = data.map(({ title }) => title);
     setCategories(categoryTitles);
     setContent(categoryTitles);
-  }, []);
+  }, [data]);
+
+  if (loading) return (<p>Loading...</p>);
 
   const categoryPickHandler = (i) => {
     setSelectedCategory(i);
@@ -33,7 +41,7 @@ const Home = () => {
 
   return (
     <section className={styles.Home}>
-      <div className="selector">
+      {/* <div className="selector">
         <Selector categories={categories} handler={categoryPickHandler} />
       </div>
       <aside>
@@ -44,7 +52,7 @@ const Home = () => {
         <div className="display">
           <Display content={content} reset={resetHandler}/>
         </div>
-      </aside>
+      </aside> */}
     </section>
   );
 };
