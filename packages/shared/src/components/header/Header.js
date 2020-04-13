@@ -1,46 +1,34 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 import styles from './Header.scss';
 import Menu from './Menu';
 import { app } from 'root/app.config.js';
 
+
 // 3RD PARTY LIBRARY
 import { FaBars as MenuIcon, FaBell as Notification } from 'react-icons/fa';
 
-// eslint-disable-next-line no-unused-vars
-class Header extends PureComponent {
-  static propTypes = {
-    menuItems: PropTypes.array,
-    isMobile: PropTypes.bool,
-  }
+const Header = ({ menuItems }) => {
 
-  state = {
-    showMenu: false,
-  }
+  const [showMenu, setShowMenu] = useState(false);
 
-  handleMenu = (showMenu = false) => {
-    this.setState({ showMenu });
-  }
+  const handleMenu = (showMenu = false) => {
+    setShowMenu({ showMenu });
+  };
 
-  handleNav = () => {
-    this.handleMenu(!this.state.showMenu);
-  }
+  const handleNav = () => {
+    handleMenu(!showMenu);
+  };
 
-  render() {
-    const { showMenu } = this.state;
-    const { menuItems, isMobile } = this.props;
-
-    return (
-      <header className={styles.Header}>
-        <MenuIcon className="header-icon-left" onClick={isMobile ? null : () => this.handleMenu(true)} />
-        <h1>{app.title}</h1>
-        <Notification className="header-icon-right" />
-        { showMenu &&
-          <Menu handleNav={this.handleNav} menuItems={menuItems} auth={true}/>
-        }
-      </header>
-    );
-  }
-}
+  return (
+    <header className={styles.Header}>
+      <MenuIcon className="header-icon-left" onClick={() => handleMenu(true)} />
+      <h1>{app.title}</h1>
+      <Notification className="header-icon-right" />
+      { showMenu &&
+        <Menu handleNav={handleNav} menuItems={menuItems} auth={true}/>
+      }
+    </header>
+  );
+};
 
 export default Header;

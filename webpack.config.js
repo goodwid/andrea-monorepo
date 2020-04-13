@@ -8,8 +8,8 @@ const path = require('path');
 module.exports = (env, argv) => {
   const { app, cordova } = env;
   let prod = argv.mode === 'production';
-
-  const buildPath = `${__dirname}/packages/${app}/build`;
+  const packageRoot = path.resolve(__dirname, `packages/${app}`);
+  const buildPath = `${packageRoot}/build`;
 
   const config = {
     entry: `./packages/${app}/src/index.js`,
@@ -35,11 +35,12 @@ module.exports = (env, argv) => {
       extensions: ['.esm.js', '.js'],
       symlinks: true,
       alias: {
-        components: path.resolve(__dirname, `packages/${app}/src/components`),
-        services: path.resolve(__dirname, `packages/${app}/src/services`),
-        styles: path.resolve(__dirname, `packages/${app}/src/styles`),
-        routes: path.resolve(__dirname, `packages/${app}/src/routes`),
-        hooks: path.resolve(__dirname, `packages/${app}/src/hooks`),
+        components: `${packageRoot}/src/components`,
+        services: `${packageRoot}/src/services`,
+        styles: `${packageRoot}/src/styles`,
+        routes: `${packageRoot}/src/routes`,
+        hooks: `${packageRoot}/src/hooks`,
+        packageRoot,
         assets: path.resolve(__dirname, 'packages/shared/assets'),
         shared: path.resolve(__dirname, 'packages/shared/src'),
         root: __dirname,
