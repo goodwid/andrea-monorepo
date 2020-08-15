@@ -1,19 +1,15 @@
 {
-  "name": "oneroom",
+  "name": "rosselle",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "lint": "eslint src",
     "pretest": "yarn run lint",
-    "build": "cd ../.. && yarn build:oneroom",
-    "start": "cd ../.. && yarn start:oneroom",
+    "build": "cd ../.. && yarn build:rosselle",
+    "start": "cd ../.. && yarn start:rosselle",
     "test": "yarn run jest",
     "jest": "jest",
     "test:watch": "yarn run test --watch"
-  },
-  "dependencies": {
-    "rss-converter": "^1.1.6",
-    "rss-parser": "^3.9.0"
   }
 }

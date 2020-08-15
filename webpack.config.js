@@ -43,7 +43,7 @@ module.exports = (env, argv) => {
         packageRoot,
         assets: path.resolve(__dirname, 'packages/shared/assets'),
         shared: path.resolve(__dirname, 'packages/shared/src'),
-        root: __dirname,
+        root: packageRoot,
       },
     },
     module: {
