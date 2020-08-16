@@ -15,7 +15,7 @@ export const ABOUT = {
 export const LESSONS = {
   path: '/lessons/:lessonId',
   component: Lessons,
-  linkTo: ({ courseId }) => `/courses/${courseId}`,
+  linkTo: (id) => `/courses/${id}`,
 };
 
 export const BLOG = {
@@ -33,5 +33,6 @@ export const CONTACT = {
 export const HOME = {
   path: '/',
   component: About,
-};
+  linkTo: () => '/',
 
+};

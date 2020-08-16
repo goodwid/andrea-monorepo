@@ -6,6 +6,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
+import menuItems from './menuItems';
 
 import styles from './App.scss';
 import { ABOUT, LESSONS, BLOG, CONTACT, HOME } from 'routes/routes';
@@ -24,7 +25,7 @@ const App = () => {
   return (
     <Router>
       <div className={styles.App}>
-        <Header title={app.title}></Header>
+        <Header title={app.title} menuItems={menuItems}></Header>
         <main>
           <p>Its the one room art house!</p>
           <Switch>
