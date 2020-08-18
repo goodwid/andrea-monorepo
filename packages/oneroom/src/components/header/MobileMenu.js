@@ -14,7 +14,7 @@ const Menu = ({ handleNav, menuItems, auth }) => {
     return () => {
       document.removeEventListener('click', clearMenu);
       document.removeEventListener('scroll', clearMenu, true);
-    }
+    };
   }, []);
 
   return (

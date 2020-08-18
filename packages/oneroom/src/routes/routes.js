@@ -1,3 +1,4 @@
+import Home from 'components/content/home/Home.js';
 
 import About from 'components/content/about/About.js';
 import Lessons from 'components/content/lessons/Lessons.js';
@@ -15,7 +16,7 @@ export const ABOUT = {
 export const LESSONS = {
   path: '/lessons/:lessonId',
   component: Lessons,
-  linkTo: (id) => `/courses/${id}`,
+  linkTo: (id = 0) => `/lessons/${id}`,
 };
 
 export const BLOG = {
@@ -32,7 +33,7 @@ export const CONTACT = {
 
 export const HOME = {
   path: '/',
-  component: About,
+  component: Home,
   linkTo: () => '/',
 
 };

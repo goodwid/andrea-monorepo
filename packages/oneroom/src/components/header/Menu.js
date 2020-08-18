@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Menu.scss';
 
 const Menu = ({ menuItems, auth }) => {
@@ -11,9 +11,9 @@ const Menu = ({ menuItems, auth }) => {
         if (auth && item.requiresAuth) return null;
         return (
           <span key={item.title}>
-            <Link to={item.to}>
+            <NavLink exact strict to={item.to}>
               {item.title}
-            </Link>
+            </NavLink>
           </span>
         );
       })}

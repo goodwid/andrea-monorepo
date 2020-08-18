@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+
 // Colors
 $light-blue: rgb(222, 234, 238);
 $olive-green: rgb(178, 203, 188);
@@ -24,7 +27,21 @@ $cyan: rgb(100, 171, 192);
 $light-sky-blue: rgba(59, 153, 252, 0.3);
 $sky-blue: rgb(59, 153, 252);
 
-$main-header-color: $light-blue;
+/* SCSS RGB
+   Andrea's Lake Summer palette
+*/
+
+/* SCSS RGB */
+$camel: rgba(170, 143, 102, 1);
+$carrot-orange: rgba(237, 155, 64, 1);
+$antique-white: rgba(255, 238, 219, 1);
+$ocean-green: rgb(139, 200, 181);
+$french-raspberry: rgba(186, 59, 70, 1);
+
+$oram-menu-color: $ocean-green;
+$oram-header-color: $antique-white;
+$oram-opacity: 0.75;
+$main-header-color: rgba(228, 146, 98, 0.623);
 $sub-header-color: rgb(37, 37, 37);
 $card-background-blue: #1976d2;
 $primary-text: $alchemy-black;
@@ -36,9 +53,11 @@ $default-modal-shadow-color: rgba(51, 51, 51, 0.8);
 $default-modal-overlay-color: rgba(0, 0, 0, 0.5);
 $primary-background-color: $alchemy-black;
 
+
 // Fonts
 $default-font: 'Roboto', sans-serif;
 $header-font: 'Lato', sans-serif;
+$oram-header-font:  'Delius Swash Caps', cursive;
 
 // Font sizes
 $default-heading-size: 1.7rem;
@@ -46,8 +65,9 @@ $default-text-size: 1.2rem;
 $default-caption-size: 1rem;
 
 // Sizing
-$header-size: 5vh;
-$content-size: (100vh - $header-size);
+$header-size: 10rem;
+// $content-size: (100vh - $header-size);
+$menu-height: 3.85rem;
 
 // Confirmation modal yes/no buttons
 @mixin selection-btn-color($to-fill) {
@@ -79,6 +99,18 @@ $content-size: (100vh - $header-size);
 /* ----------- Small Display ----------- */
 @mixin small-display {
   @media (max-width: 360px) {
+    @content;
+  }
+}
+
+@mixin isMobile {
+  @media screen and (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin isDesktop {
+  @media screen and (min-width: 600px) {
     @content;
   }
 }

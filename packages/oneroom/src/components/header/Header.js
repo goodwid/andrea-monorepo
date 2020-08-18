@@ -2,15 +2,9 @@ import React, { useState } from 'react';
 import styles from './Header.scss';
 import Menu from './Menu';
 import MobileMenu from './MobileMenu';
-import { app } from 'root/app.config.js';
 import { useMobile, useDesktop } from 'shared/hooks/useMedia';
 
-
-
-// 3RD PARTY LIBRARY
-import { FaBars as MenuIcon, FaBell as Notification } from 'react-icons/fa';
-
-
+import { FaBars as MenuIcon } from 'react-icons/fa';
 
 const Header = ({ menuItems }) => {
 
@@ -22,21 +16,21 @@ const Header = ({ menuItems }) => {
     setShowMenu(showMenu);
   };
 
-  return (
-    <>
-      <header className={styles.Header}>
-        { isMobile
-          ? <MenuIcon className="header-icon-left" onClick={() => handleMenu(true)} />
-          : <div></div> }
+  const classes = [styles.Header];
 
-        <h1>{app.title}</h1>
-        <Notification className="header-icon-right" />
-        { (isMobile && showMenu) &&
-          <MobileMenu handleNav={handleMenu} menuItems={menuItems} auth={true}/>
-        }
-      </header>
+  return (
+    <header className={classes.join(' ')}>
+      {/* <MenuIcon className="header-icon-left" onClick={() => handleMenu(true)} /> */}
+      { isMobile
+        ? <MenuIcon className="header-icon-left" onClick={() => handleMenu(true)} />
+        : <></>}
+
+      <p className="title">One Room Art House</p>
+      { (isMobile && showMenu) &&
+        <MobileMenu handleNav={handleMenu} menuItems={menuItems} auth={true}/>
+      }
       { isDesktop && <Menu menuItems={menuItems} auth={true}/> }
-    </>
+    </header>
   );
 };
 

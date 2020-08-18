@@ -1,33 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import Parser from 'rss-parser';
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-const parser = new Parser();
+import React, { useState } from 'react';
+import styles from '../content.scss';
 
 const Blog = () => {
 
-  const [feed, setFeed] = useState(null);
-
-  useEffect(() => {
-    fetch(proxyUrl + 'https://medium.com/feed/@andrearosselle', {})
-      .then(res => res.text())
-      .then(xml => parser.parseString(xml))
-      .then(data => setFeed(data))
-      .catch(err => console.log('error: ', err));
-
-  }, []);
+  const [feed] = useState(null);
 
 
   if (feed === null) {
-    return (<h2>Loading...</h2>);
+    return (<div className={styles.content}>
+      <p>Loading . . .</p>
+
+    </div>);
   }
 
-  console.log(feed);
   return (
-    <>
-      <h3>Im the Blog!</h3>
-      {feed.title}
-      <img src={feed.image.url}></img>
-    </>
+    <div className={styles.content}>
+      <p>Im the Blog!</p>
+
+    </div>
 
   )
   ;

@@ -1,0 +1,32 @@
+@import 'shared/styles/variables.scss';
+
+:local(.content) {
+  height: 1px;
+  min-height: 83vh;
+
+  padding: 80px;
+  background-color: $antique-white;
+  font-family: $oram-header-font;
+  overflow-y: scroll;
+  z-index: 0;
+
+  opacity: $oram-opacity;
+
+  h1 {
+    color: $french-raspberry;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: none;
+    font-size: 2.2em;
+    margin: 1em .5em
+  }
+
+  p {
+    padding: 20px 0;
+    font-size: 1.8em;
+
+    color: scale($ocean-green, -30%);
+    // text-shadow: 1px 2px 4px salmon;
+    line-height: 1.6em;
+  }
+}

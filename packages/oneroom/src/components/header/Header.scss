@@ -1,26 +1,51 @@
 @import 'shared/styles/variables.scss';
 
 :local(.Header) {
-  position: relative;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  align-content: center;
-  width: 100vw;
-  height: $header-size;
-  background-color: $main-header-color;
-  font-family: $header-font;
-  font-size: 1.4rem;
-  font-weight: 700;
-  padding: 1rem;
+  justify-content: center;
+  position: sticky;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+  z-index: 200;
+  opacity: $oram-opacity;
+  height: ($header-size + $menu-height);
+  @include isMobile {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40px 1fr;
+    height: 6rem;
 
-  .header-icon-left {
-    position: relative;
-    right: 1px;
+    justify-content: space-around;
+
   }
 
-  .header-icon-right {
-    position: relative;
-    left: 1px;
+  .title {
+    background-color: $oram-header-color;
+    color: darkgreen;
+    font-family: $oram-header-font;
+    font-size: 64px;
+    font-weight: 400;
+    padding: 1rem;
+    border: 7px solid $french-raspberry;
+    border-radius: 100px;
+    margin-top: -3rem;
+
+    @media screen and (max-width: 720px) {
+      font-size: 48px
+    }
+
+    @include isMobile {
+      font-size: 32px;
+      margin-top: 0;
+    }
+  }
+
+  .header-icon-left {
+    position: absolute;
+    left: 8px;
+    color: $antique-white;
+    font-size: 32px;
   }
 }

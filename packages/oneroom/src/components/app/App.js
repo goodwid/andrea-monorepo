@@ -1,5 +1,4 @@
 import React from 'react';
-import { app } from 'packageRoot/app.config';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,9 +12,6 @@ import { ABOUT, LESSONS, BLOG, CONTACT, HOME } from 'routes/routes';
 import Header from 'components/header/Header';
 // import Footer from 'shared/components/footer/Footer';
 
-
-
-
 const App = () => {
   // const isCordova = Boolean(window.cordova);
   // const Router = isCordova ? HashRouter : BrowserRouter;
@@ -25,15 +21,15 @@ const App = () => {
   return (
     <Router>
       <div className={styles.App}>
-        <Header title={app.title} menuItems={menuItems}></Header>
-        <main>
-          <p>Its the one room art house!</p>
+        <Header menuItems={menuItems}></Header>
+        <main className="main-content">
           <Switch>
 
             <Route path={ABOUT.path} component={ABOUT.component} />
             <Route path={LESSONS.path} component={LESSONS.component} />
             <Route path={BLOG.path} component={BLOG.component} />
             <Route path={CONTACT.path} component={CONTACT.component} />
+            <Route path={HOME.path} component={HOME.component} />
 
             <Redirect to={HOME.path} />
 

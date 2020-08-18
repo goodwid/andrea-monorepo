@@ -1,6 +1,23 @@
 @import 'shared/styles/variables.scss';
 
-:local(.App) {
 
-  
+:local(.App) {
+  background-image: url('../../../../shared/assets/background.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  overflow-y: visible;
+  width: 100vw;
+
+  .main-content {
+    height: 1px;
+    // min-height: 1000px;
+
+    // top: 20vh;
+    // overflow-y: scroll;
+    z-index: 50;
+  }
+
 }
