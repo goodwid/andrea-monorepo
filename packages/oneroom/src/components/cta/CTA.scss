@@ -1,0 +1,21 @@
+@import 'shared/styles/variables.scss';
+
+:local(.CTA) {
+  margin-top: 32px;
+  margin-bottom: 64px;
+  background-color: $ocean-green;
+  color: $french-raspberry;
+  font-family: $oram-header-font;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 1rem;
+  border: 7px solid $french-raspberry;
+  border-radius: 100px;
+  width: 340px;
+
+  a {
+    text-decoration: none;
+    color: $french-raspberry;
+
+  }
+}
