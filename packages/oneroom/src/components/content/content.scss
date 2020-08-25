@@ -9,12 +9,21 @@
   text-align: justify;
 
   padding: 80px;
-  background-color: $antique-white;
+  background-color: rgba(255, 238, 219, 1);
   font-family: $oram-header-font;
   overflow-y: scroll;
   z-index: 0;
 
-  opacity: $oram-opacity;
+  @include isMobile {
+    font-size: 16px;
+    // min-width: 95vw;
+    // color: red;
+    margin-top: 0;
+    // text-align: left;
+    padding: 20px 10px 100px;
+    min-height: 100vh;
+  }
+
 
   h1 {
     color: $andrea-red;
@@ -22,7 +31,11 @@
     font-weight: 700;
     text-shadow: none;
     font-size: 2.2em;
-    margin: 1em .5em
+    margin: 1em .5em;
+    @include isMobile {
+      margin: 0;
+      font-size: 1.5em;
+    }
   }
 
   p {
@@ -31,9 +44,15 @@
     font-family: Arial, Helvetica, sans-serif;
 
     color: darken($ocean-green, 45%);
-    // text-shadow: 1px 2px 4px salmon;
     line-height: 1.6em;
     text-indent: 2em;
+
+    @include isMobile {
+      text-indent: 0;
+      font-size: 1em;
+
+
+    }
   }
   ul {
     list-style-type: none;
@@ -42,7 +61,6 @@
     font-size: 1.8em;
     font-family: Arial, Helvetica, sans-serif;
     text-indent: 2em;
-
   }
 
   .tagline {
@@ -54,8 +72,6 @@
     margin: 0 auto;
     border-radius: 10px;
     text-indent: 0;
-
-
     th {
       text-align: center;
     }
@@ -71,10 +87,15 @@
   }
 
   img {
+    background-color: rgba(0,0,0,1);
     width: 400px;
     margin-top: .2em;
     border: 3px solid $french-raspberry;
     border-radius: 20px;
+    @include isMobile {
+      width: 40%;
+    }
+
   }
   .right {
     margin-left: 40px;

@@ -73,8 +73,10 @@
   },
   "dependencies": {
     "chance": "^1.1.6",
+    "dotenv": "^8.2.0",
     "dotenv-webpack": "^2.0.0",
     "firebase": "^7.18.0",
+    "ftp-deploy": "^2.3.7",
     "normalize.css": "^8.0.0",
     "react": "^16.13.1",
     "react-clipboard.js": "^2.0.16",

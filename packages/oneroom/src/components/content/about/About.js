@@ -55,7 +55,7 @@ const About = () => {
       </p>
       <p>
         During her undergraduate education, Andrea’s student teaching experience created in her a love of teaching through an&nbsp;
-        <img src={close} className="right" align="right" style={ { width: '280px' } }/>
+        <img src={close} className="right" align="right" />
         <a href="https://www.khanacademy.org/humanities/ap-art-history/start-here-apah/intro-art-history-apah/a/introduction-to-art-historical-analysis" target="blank" rel="noopener noreferrer">
           Art Historical lens.
         </a>
@@ -81,7 +81,7 @@ const About = () => {
         communicate, express self, and form identity as artists became a central theme to her work with students.
       </p>
       <p>
-        <img src={gluing} className="left" align="left" style={ { width: '320px' } }/>
+        <img src={gluing} className="left" align="left" />
         Alongside Andrea’s exploration as a teacher has been her own&nbsp;
         <a href="https://rossellestudios.com/" target="blank" rel="noopener noreferrer">
           artistic practice.

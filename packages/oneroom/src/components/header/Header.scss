@@ -9,16 +9,11 @@
   width: 100%;
   background-color: rgba(0,0,0,.5);
   z-index: 200;
-  opacity: $oram-opacity;
   height: ($header-size + $menu-height);
   @include isMobile {
-    display: grid;
     width: 100%;
-    grid-template-columns: 40px 1fr;
     height: 6rem;
-
     justify-content: space-around;
-
   }
 
   .title {
@@ -28,7 +23,7 @@
     font-size: 64px;
     font-weight: 400;
     padding: 1rem;
-    border: 7px solid $french-raspberry;
+    border: 7px solid $andrea-red;
     border-radius: 100px;
     margin-top: -3rem;
 
@@ -37,8 +32,12 @@
     }
 
     @include isMobile {
-      font-size: 32px;
+      border: 3px solid $andrea-red;
+
+      font-size: 20px;
+      min-width: 80vw;
       margin-top: 0;
+      text-align: center;
     }
   }
 

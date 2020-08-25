@@ -10,20 +10,29 @@
     padding: 0;
     transition: visibility 1s linear;
     background-color:rgba(255,255,255,1);
-    // border-radius: 0 0 5px 5px;
-    width: 60%;
-    border: 1px solid black;
+    border-radius: 0 0 5px 5px;
+    width: 45%;
+    border: 1px solid $andrea-red;
     z-index: 100;
 
     ul {
       width: 100%;
 
       li {
+        font-family: $oram-header-font;
+
         font-size: 22px;
         padding: 0.3em;
-        background-color: white;
+        background-color: $antique-white;
+        a {
+          padding-left: .5em;
+          text-decoration: none;
+
+        }
         border-bottom: 2px solid $dark-orange;
       }
+
+
 
       li:last-of-type {
         border-bottom: none;

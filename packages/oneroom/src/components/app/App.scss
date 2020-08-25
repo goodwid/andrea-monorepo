@@ -2,7 +2,7 @@
 
 
 :local(.App) {
-  background-image: url('../../../../shared/assets/background.png');
+  background-image: url('../../../../shared/assets/table.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,12 +12,10 @@
   width: 100vw;
 
   .main-content {
-    height: 1px;
     // min-height: 1000px;
 
     // top: 20vh;
     // overflow-y: scroll;
-    z-index: 50;
   }
 
 }
