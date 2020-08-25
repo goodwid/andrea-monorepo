@@ -17,7 +17,7 @@
   opacity: $oram-opacity;
 
   h1 {
-    color: $french-raspberry;
+    color: $andrea-red;
     text-align: center;
     font-weight: 700;
     text-shadow: none;
@@ -30,7 +30,7 @@
     font-size: 1.8em;
     font-family: Arial, Helvetica, sans-serif;
 
-    color: scale($ocean-green, -30%);
+    color: darken($ocean-green, 45%);
     // text-shadow: 1px 2px 4px salmon;
     line-height: 1.6em;
     text-indent: 2em;
@@ -50,14 +50,19 @@
   }
 
   table {
+    width: 100%;
     margin: 0 auto;
     border-radius: 10px;
+    text-indent: 0;
+
+
     th {
-      text-align: left;
+      text-align: center;
     }
 
     th, td {
       border: 1px solid black;
+      padding: 4px 20px;
     }
   }
 

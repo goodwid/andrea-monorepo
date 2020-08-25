@@ -1,11 +1,14 @@
 @import 'shared/styles/variables.scss';
 
+$active-color: red;
+
 :local(.Menu) {
   position: fixed;
   top: $header-size;
   z-index: 100;
   padding:  20px 0;
   width: 100%;
+  box-sizing: content-box;
 
   display: flex;
   align-items: center;
@@ -19,15 +22,18 @@
     font-size: 22px;
     font-weight: 700;
     margin:  20px;
-    padding: 0.3em;
+    padding: 0.3em 2em;
     text-decoration: none;
     color: black;
     // background-color: white;
     // border-bottom: 2px solid $dark-orange;
+    border: 3px solid rgba(0,0,0,0);
 
   }
   .active {
-    color: red;
+    color: #0000a0;
     opacity: 1;
+    border: 3px solid darken($ocean-green, 16%);
+    border-radius: 30px;
   }
 }

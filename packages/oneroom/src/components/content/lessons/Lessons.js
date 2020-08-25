@@ -64,12 +64,12 @@ const Lessons = () => {
       </h1>
 
       <p>
-        Individual standard sessions are billed at $65 per session, and short sessions at $35 per session. Andrea can also teach One Room Art House friend-classes. These are small classes of 2-5 people composed of students who consider themselves friends. These classes differ only in that the collective group of students determine the direction of the art lessons together. <strong>Friend-classes can only be booked as a standard lesson, as short lesson periods do not lend themselves to group classes</strong>.
+        Individual standard sessions are billed at $65 per session, and short sessions at $35 per session. Andrea can also teach One Room Art House Combined classes. These are small classes of 2-5 people composed of students who want to take a class together. These classes differ only in that the collective group of students determine the direction of the art lessons together. <strong>Combined classes can only be booked as a standard lesson, as short lesson periods do not lend themselves to groups.</strong>
       </p>
       <p>
         <table>
           <caption>
-            Fee schedule for Friend Classes
+            Fee schedule for Combined Classes
           </caption>
           <thead>
             <th>No. Students</th>
