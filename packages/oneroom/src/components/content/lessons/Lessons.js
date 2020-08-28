@@ -71,7 +71,7 @@ const Lessons = () => {
         Andrea excels at teaching drawing, painting (acrylic and watercolor), two and three dimensional
         mixed media processes, as well as clay sculpture. She has also taught many other art mediums as
         a classroom art teacher, you name it, she’s probably tried it. If you want to inquire about specific
-        art processes, please inquire via the Contact page.
+        art processes, please inquire via email to <a href="mailto:oneroomarthouse@gmail.com">andrea@oneroomarthouse.com</a>.
       </p>
       <h1>What if I, or my child, don’t know what type of art lessons we want?</h1>
       <p>
@@ -89,37 +89,11 @@ const Lessons = () => {
       <h1>
         So, how much does it cost?
       </h1>
-
       <p>
-        Individual standard sessions are billed at $65 per session, and short sessions at $35 per session.
-        Andrea can also teach One Room Art House combined classes. These are small classes of 2-5 people
-        composed of students who want to take a class together. These classes differ only in that the
-        collective group of students determine the direction of the art lessons together. <strong>Combined
-        classes can only be booked as a standard lesson, as short lesson periods do not lend themselves to groups.</strong>
+        Lesson pricing is being coordinated with a Private Lesson Program at an institution Andrea is working
+        with. Stop back in the coming weeks for updates on lesson pricing. Pricing will be finalized by mid-September 2020.
       </p>
-      <p>
-        <table>
-          <caption>
-            Fee schedule for Combined Classes
-          </caption>
-          <thead>
-            <th>No. Students</th>
-            <th>Cost per student</th>
-          </thead>
-          <tr>
-            <td>2</td>
-            <td>$40</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>$35</td>
-          </tr><tr>
-            <td>4-5</td>
-            <td>$30</td>
-          </tr>
-        </table>
 
-      </p>
       <CTA />
 
 
