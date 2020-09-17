@@ -5,8 +5,6 @@ import Lessons from 'components/content/lessons/Lessons.js';
 import Blog from 'components/content/blog/Blog.js';
 import Contact from 'components/content/contact/Contact.js';
 
-
-
 export const ABOUT = {
   path: '/about',
   component: About,
@@ -14,9 +12,9 @@ export const ABOUT = {
 };
 
 export const LESSONS = {
-  path: '/lessons/:lessonId',
+  path: '/lessons',
   component: Lessons,
-  linkTo: (id = 0) => `/lessons/${id}`,
+  linkTo: () => '/lessons',
 };
 
 export const BLOG = {

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { CONTACT } from 'routes/routes';
 import styles from './Header.scss';
 import Menu from './Menu';
 import MobileMenu from './MobileMenu';
@@ -20,7 +22,6 @@ const Header = ({ menuItems }) => {
 
   return (
     <header className={classes.join(' ')}>
-      {/* <MenuIcon className="header-icon-left" onClick={() => handleMenu(true)} /> */}
       { isMobile
         ? <MenuIcon className="header-icon-left" onClick={() => handleMenu(true)} />
         : <></>}
@@ -30,6 +31,7 @@ const Header = ({ menuItems }) => {
         <MobileMenu handleNav={handleMenu} menuItems={menuItems} auth={true}/>
       }
       { isDesktop && <Menu menuItems={menuItems} auth={true}/> }
+      <div className="header-cta"><Link to={CONTACT.linkTo()}>Get Started!</Link></div>
     </header>
   );
 };

@@ -27,7 +27,7 @@
     border-radius: 100px;
     margin-top: -3rem;
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 800px) {
       font-size: 48px
     }
 
@@ -47,4 +47,36 @@
     color: $antique-white;
     font-size: 32px;
   }
+
+  .header-cta {
+    font-family: $oram-header-font;
+    color: $antique-white;
+    font-size: 22px;
+    background: rgb(105, 19, 11);
+
+    a {
+      text-decoration: none;
+      color: $antique-white;
+    }
+
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 8px;
+    padding: 8px 40px 8px 40px;
+    transform: translateX(50%) translateY(-100%) rotate(45deg);
+    transform-origin: top left;
+
+    @include isMobile {
+      transform: none;
+      transform: rotate(90deg) translateY(-366%);
+      width: 96px;
+      font-size: 16px;
+      margin: 0;
+      height: 26px;
+      padding: 3px;
+    }
+  }
+
 }
