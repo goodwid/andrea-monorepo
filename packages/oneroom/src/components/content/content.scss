@@ -32,7 +32,7 @@
     text-shadow: none;
     font-size: 3em;
     max-width: 800px;
-    // margin: 1em .5em;
+    margin: 1em .5em;
     @include isMobile {
       margin: 0;
       font-size: 1.5em;
@@ -49,7 +49,7 @@
   }
 
   p {
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 1.8em;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -59,7 +59,7 @@
     max-width: 1000px;
 
     @include isMobile {
-      text-indent: 0;
+      text-indent: 8px;
       font-size: 1em;
 
 
@@ -81,7 +81,7 @@
 
     }
   }
-  
+
 
   .tagline {
     margin-left: 60px;

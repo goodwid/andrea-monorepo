@@ -19,9 +19,9 @@ const About = () => {
           href="https://www.oes.edu/">independent school in Portland Oregon</a>. With over
 20 years experience as an <a
           href="https://www.researchgate.net/publication/291034623_Redefining_the_Artist_-Teacher">artist-teacher,</a>
-she has a <a
+&nbsp;she has a <a
           href="https://www.alfred.edu/academics/colleges-schools/college-ceramics/index.cfm">BFA
-with a minor in Education</a>, a <a
+with a minor in Education</a>, an <a
           href="https://www.cmich.edu/colleges/cam/ART/Pages/default.aspx">MA in
 Ceramics</a>, and a <a
           href="https://www.apu.edu/vpa/programs/mfa-in-visual-art/">MFA in the Visual
@@ -34,8 +34,7 @@ students!
       The granddaughter of two teachers, Andrea’s grandmother Audrey Madden Rosselle
 graduated from a <a
           href="https://www.potsdam.edu/about/college-history">teacher’s college</a> in
-upstate New York in the 1930’s.&nbsp;in&nbsp;
-One of Audrey’s teaching assignments, when her
+upstate New York in the 1930’s. One of Audrey’s teaching assignments, when her
 sons were young children, was in a <a href="http://www.townofbleecker.com/">one
 room schoolhouse</a>. Andrea, whose father was Audrey’s middle child, grew up
 with stories and influences of this rural schoolhouse. Many of the philosophies

@@ -20,17 +20,8 @@ const Lessons = () => {
         as you have a video chat capable device (tablet, laptop, smartphone) and internet access.
         Andrea is able to share artwork virtually, do live art demonstrations, and guide you
         through most processes via the <a href="https://zoom.us/">Zoom</a> app. You will also need to be able to take and
-         upload pictures of your artwork to share with Andrea.
+        upload pictures of your artwork to share with Andrea.
 
-      </p>
-
-      <h1>How and when are lessons?</h1>
-
-      <p>
-        Standard lessons are booked for 1 hour time slots, and last 50 minutes.  These can be
-        scheduled weekly or bi-weekly, from September to June. Shorter lessons can be
-        booked for current students, as needed.  These are half-hour time slots, and last
-        25 minutes.  Lessons can be scheduled during weekdays, with the exception of Wednesday.
       </p>
 
       <h1>What art media does Andrea teach?</h1>
@@ -67,12 +58,21 @@ const Lessons = () => {
         mini-lesson 25 minute time slot, where you can hear about possibilities.
       </p>
 
+      <h1>How and when are lessons?</h1>
+
+      <p>
+        Standard lessons are booked for 1 hour time slots, and last 50 minutes.  These can be
+        scheduled weekly or bi-weekly, from September to June. Shorter lessons can be
+        booked for current students, as needed.  These are half-hour time slots, and last
+        25 minutes.  Lessons can be scheduled during weekdays, with the exception of Wednesday.
+      </p>
+
       <h1>
         So, how much does it cost?
       </h1>
       <p>
-        Lesson pricing is being coordinated with a Private Lesson Program at an institution Andrea is working
-        with. Stop back in the coming weeks for updates on lesson pricing. Pricing will be finalized by mid-September 2020.
+        The cost for one student for a standard lesson is $65.  A group of two students is $35 each, and 3-5 students are $30 each.
+        The shorter session is $35 for one student, and these are only available for single students.
       </p>
 
       <h1>
