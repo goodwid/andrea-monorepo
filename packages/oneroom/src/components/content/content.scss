@@ -45,7 +45,7 @@
     margin: 0.8em 0;
     text-shadow: none;
     font-size: 2.2em;
-    color: #0000A0;
+    color: $oram-header-text;
   }
 
   p {
@@ -61,8 +61,10 @@
     @include isMobile {
       text-indent: 8px;
       font-size: 1em;
+    }
 
-
+    a {
+      color: $oram-header-text;
     }
   }
   ul {

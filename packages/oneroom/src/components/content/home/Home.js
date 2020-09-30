@@ -39,7 +39,7 @@ const Home = () => {
         <br />Love, Deniz
         <br /><br />
         Dear Ms. Rosselle,<br />
-        Thank you for being an amazing supportive teacher who respects everyone’s ideas. You make me love art every single day. I can not wait to continue art. Thank you.
+        Thank you for being an amazing supportive teacher who respects everyone&apos;s ideas. You make me love art every single day. I can not wait to continue art. Thank you.
         <br />Love, Maya
         <br /><br />
         Dear Ms. Rosselle,<br />
