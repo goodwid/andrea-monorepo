@@ -3,7 +3,6 @@ import styles from '../content.scss';
 import CTA from 'components/cta/CTA';
 import house from 'assets/house.png';
 
-
 const Home = () => {
 
   return (
@@ -23,7 +22,7 @@ const Home = () => {
       </h1>
 
       <div className="embed-video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LERHn02fdls" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2Yzz9H5uW6A" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
 
       <h1>
@@ -57,6 +56,11 @@ const Home = () => {
       <p>
         Andrea is an outstanding teacher and we are truly grateful that our daughter has been able to learn and grow under her guidance. She takes the time to understand our daughter’s interests and current ability and is able to meet her where she is and move her forward in a way that allows her creativity to blossom. I am impressed with how Andrea has been able to use technology and this online setting to enhance her lessons. These lessons have far exceeded our expectations.
         <br />Liz Weiler
+      </p>
+      <p>
+        Andrea is a truly gifted teacher in a variety of media and with many ages of children.  I have watched her work with children from toddler through high school age, adapting her teaching to their developmental needs and interests.   She has taught my 2 energetic boys (now 10 and 12) for more than 4 years — she remembers their particular passions and gifts from week to week and often has ideas in mind that both appeal to them and move their learning in a new direction.  They are always excited to see her and to show me the work they have made with her help.
+        <br />Emily Guimaraes
+
       </p>
       <p>
       Andrea’s enthusiasm and passion for teaching art is infectious, so is her laughter! She models curiosity and joy for her craft and inspires students to explore their artistic senses-she has a beautiful way of showing students how to create with an eye for design and visual composition.

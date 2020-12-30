@@ -18,5 +18,8 @@
   "dependencies": {
     "rss-converter": "^1.1.6",
     "rss-parser": "^3.9.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.1.1"
   }
 }

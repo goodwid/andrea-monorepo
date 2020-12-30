@@ -33,13 +33,7 @@ export default [
     label: 'Main screen of app',
     requiresAuth: false,
   },
-  {
-    Icon: Blog,
-    to: BLOG.linkTo(),
-    title: 'Blog',
-    label: 'Main screen of app',
-    requiresAuth: false,
-  },
+
   {
     Icon: Contact,
     to: CONTACT.linkTo(),
