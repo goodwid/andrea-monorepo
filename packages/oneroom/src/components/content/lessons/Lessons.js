@@ -61,124 +61,20 @@ const Lessons = () => {
       <h1>How and when are lessons?</h1>
 
       <p>
-        Standard lessons are booked for 1 hour time slots, and last 50 minutes.  These can be
-        scheduled weekly or bi-weekly, from September to June. Shorter lessons can be
+        Standard lessons are booked for 1 hour time slots, and last 55 minutes.  These can be
+        scheduled weekly, bi-weekly, or monthly.  Shorter lessons can be
         booked for current students, as needed.  These are half-hour time slots, and last
-        25 minutes.  Lessons can be scheduled during weekdays, with the exception of Wednesday.
+        30 minutes.  Lessons can be scheduled during weekdays, with the exception of Wednesday.
       </p>
 
       <h1>
         So, how much does it cost?
       </h1>
       <p>
-        The cost for one student for a standard lesson is $65.  A group of two students is $35 each, and 3-5 students are $30 each.
-        The shorter session is $35 for one student, and these are only available for single students.
+        The cost for one student for a standard lesson is $75.  Andrea accepts groups on a
+        case-by-case basis.  Please inquire if interested.  The shorter session is $35.
       </p>
 
-      <h1>
-        What art supplies will you need?
-      </h1>
-
-      <p>
-        <ul>
-          <li><strong>Suggested Supplies: You only need to buy what is needed for your lessons.</strong></li>
-          <li><strong>Value Drawing:</strong>
-            <ul className="small-list">
-              <li><a href="https://www.dickblick.com/products/blick-studio-drawing-pencils/">Pencils</a> in 4B, 2B, HB, 2H (A pencil set which includes these is ideal)</li>
-              <li><a href="https://www.dickblick.com/items/20425-1004/">Conte Pencil</a> HB (or charcoal pencil)</li>
-              <li><a href="https://www.dickblick.com/items/21334-2119/">grayscale markers</a></li>
-              <li><a href="https://www.dickblick.com/products/pentel-hi-polymer-erasers/">a white eraser</a></li>
-              <li><a href="https://www.dickblick.com/categories/drawing/pencils/sharpeners/">pencil sharpener</a></li>
-              <li><a href="https://www.dickblick.com/products/canson-xl-sketch-pads/">drawing paper</a></li>
-              <li><a href="https://www.dickblick.com/products/blick-studio-tracing-paper-pads/">tracing paper</a></li>
-              <li>scrap paper</li>
-            </ul>
-          </li>
-          <li><strong>Color Drawing:</strong>
-            <ul className="small-list">
-              <li><a href="https://www.dickblick.com/items/20049-1009/">Oil pastels</a></li>
-              <li><a href="https://www.dickblick.com/items/20508-1209/">Prismacolor set</a></li>
-              <li><a href="https://www.dickblick.com/items/20508-1010/">colorless blender</a></li>
-              <li><a href="https://www.dickblick.com/items/21334-3109/">color brush pens</a></li>
-              <li><a href="https://www.dickblick.com/products/maped-hand-held-sharpener/">pencil sharpener</a></li>
-              <li><a href="https://www.dickblick.com/products/canson-xl-mix-media-pads/">mixed media paper</a></li>
-              <li>pencil</li><li>scrap paper</li>
-            </ul>
-          </li>
-          <li><strong>Watercolor Painting:</strong>
-            <ul className="small-list">
-              <li><a href="https://www.dickblick.com/items/00325-1029/">Watercolor paint tray</a> (including yellow ochre or mustard & brown)</li>
-              <li><a href="https://www.dickblick.com/items/05890-1029/">watercolor brush set </a>(including at least one flat and one round tip brush)</li>
-              <li><a href="https://www.dickblick.com/products/7-well-flower-palette/">mixing tray</a> or kitchen plate</li>
-              <li><a href="https://www.dickblick.com/products/grumbacher-miskit-frisket/">Misket</a> (liquid frisket)</li>
-              <li><a href="https://www.dickblick.com/items/23065-1134/">blue painters tape</a></li>
-              <li><a href="https://www.dickblick.com/items/22945-1002/">drawing board</a> (heavy cardboard works), cup for water</li>
-              <li><a href="https://www.dickblick.com/items/10180-1315/">watercolor paper</a> (cold press, 140lb)</li>
-              <li>pencil</li><li>scrap paper</li>
-            </ul>
-          </li>
-          <li><strong>Ink &amp; Brush:</strong>
-            <ul className="small-list">
-              <li><a href="https://www.dickblick.com/items/21101-2004/">India ink</a></li>
-              <li><a href="https://www.dickblick.com/items/05412-9003/">bamboo brushes</a></li>
-              <li><a href="https://www.dickblick.com/items/21334-2119/">grayscale markers</a></li>
-              <li><a href="https://www.dickblick.com/items/09307-1001/">round tip #1 paintbrush</a></li>
-              <li><a href="https://www.dickblick.com/items/10667-1012/">ink sketchpad</a> (mixed media or bristol sketchpads good too)</li>
-              <li><a href="https://www.dickblick.com/products/pentel-hi-polymer-erasers/">white eraser</a></li>
-              <li>scrap paper</li>
-              <li>pencil</li>
-            </ul>
-          </li>
-          <li><strong>Acrylic Painting:</strong>
-            <ul className="small-list">
-              <li><a href="https://www.dickblick.com/items/00711-9019/">Acrylic paint set</a> (primary colors plus black and white),</li>
-              <li><a href="https://www.dickblick.com/items/03427-1007/">palette</a> or plastic plate,</li>
-              <li><a href="https://www.dickblick.com/items/05564-0049/">acrylic paintbrush set</a> (including a ¾ or 1 inch flat tip brush)</li>
-              <li><a href="https://www.dickblick.com/items/01610-1032/">gel medium</a></li>
-              <li><a href="https://www.dickblick.com/items/08908-1004/">canvas pad</a></li>
-              <li>cup for water</li>
-              <li>drawing paper</li>
-              <li>plastic wrap</li>
-              <li>pencil</li>
-              <li>eraser</li>
-            </ul>
-          </li>
-          <li><strong>Mixed Media Collage:</strong>
-            <ul className="small-list">
-              <li><a href="https://www.dickblick.com/products/pacon-tru-ray-construction-paper/">Colored paper</a></li>
-              <li><a href="https://www.dickblick.com/products/scotch-multi-purpose-scissors/">scissors</a></li>
-              <li><a href="https://www.dickblick.com/items/56445-1011/">craft knife</a></li>
-              <li><a href="https://www.dickblick.com/items/02916-1015/">matte mod podge</a></li>
-              <li><a href="https://www.dickblick.com/items/00717-2159/">acrylic paints</a></li>
-              <li><a href="https://www.dickblick.com/products/blick-essentials-craft-value-brush-set/">assorted paintbrushes</a></li>
-              <li><a href="https://www.dickblick.com/products/sharpie-oil-based-paint-markers/">assorted oil-based markers</a></li>
-              <li><a href="https://www.dickblick.com/items/13337-1007/">bristol pad</a></li>
-              <li><a href="https://www.dickblick.com/items/57522-7506/">cutting mat</a> or scrap cardboard</li>
-              <li>scrap paper</li>
-              <li>pencil</li>
-              <li>eraser</li>
-              <li>scotch tape</li>
-              <li>found papers (newspaper, old books, magazines, old photos, scrapbook papers, etc)</li>
-            </ul>
-          </li>
-          <li><strong>Mixed Media Assemblage (Sculpture):</strong> Assorted scrap cardboard, paper bags any type, scrap paper any/all types,
-            <ul className="small-list">
-              <li><a href="https://www.dickblick.com/items/13111-1007/">tag board</a></li>
-              <li><a href="https://www.dickblick.com/products/grafix-chipboard-assorted-pack-of-15/">chipboard</a></li>
-              <li><a href="https://www.dickblick.com/items/24149-1012/">masking tape</a></li>
-              <li><a href="https://www.dickblick.com/items/23884-1016/">tacky glue</a></li>
-              <li><a href="https://www.dickblick.com/items/23605-0000/">hot glue gun</a> and <a href="https://www.dickblick.com/items/23617-1015/">glue sticks</a></li>
-              <li><a href="https://www.dickblick.com/items/23886-1006/">school glue</a></li>
-              <li><a href="https://www.dickblick.com/items/23065-1134/">blue painters tape</a></li>
-              <li>scrap string/yarn/cord</li>
-              <li>scrap fabric</li>
-              <li>beads or buttons</li>
-              <li>and a pencil</li>
-            </ul>
-          </li>
-          <li><strong>Clay Sculpture:</strong> Please contact Andrea to talk about specific materials. Type of clay is dependent on if a student has access to a kiln, and specific sculptural goals.</li>
-        </ul>
-      </p>
       <CTA />
     </div>
   );

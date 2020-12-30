@@ -32,19 +32,13 @@ students!
       <p>
         <img src={collage} className="left" align="left"/>
       The granddaughter of two teachers, Andrea’s grandmother Audrey Madden Rosselle
-graduated from a <a
-          href="https://www.potsdam.edu/about/college-history">teacher’s college</a> in
+graduated from a teacher’s college in
 upstate New York in the 1930’s. One of Audrey’s teaching assignments, when her
 sons were young children, was in a <a href="http://www.townofbleecker.com/">one
 room schoolhouse</a>. Andrea, whose father was Audrey’s middle child, grew up
 with stories and influences of this rural schoolhouse. Many of the philosophies
-inherent in the&nbsp;<a
-          href="https://teaching.cornell.edu/teaching-resources/engaging-students/collaborative-learning">collaborative</a>,&nbsp;
-        <a
-          href="https://www.theedadvocate.org/philosophies-education-3-types-student-centered-philosophies/">progressivist</a>,&nbsp;
-        <a
-          href="https://library.educause.edu/topics/teaching-and-learning/competency-based-education-cbe">competency-based</a>&nbsp;schoolhouse model of education were instilled in Andrea through
-family.
+inherent in the collaborative, progressivist, competency-based schoolhouse model
+of education were instilled in Andrea through her family.
       </p>
       <p>
 Many of the tenets of the one room schoolhouse model of education are embodied
